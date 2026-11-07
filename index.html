@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Farandulero — Restaurante Cubano en Tampa | Dos sedes: Gunn Hwy y Hillsborough</title>
+<meta name="description" content="El Farandulero: un pedacito de Cuba en Tampa. Cortes al estilo brasileño, tablas familiares, pizzas cubanas y Noches de Humor. Dos sedes: 4327 Gunn Hwy y 9743 W Hillsborough Ave, Tampa, FL.">
+<link rel="icon" href="imgs/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b0b0d">
+<meta property="og:title" content="El Farandulero — Restaurante Cubano en Tampa">
+<meta property="og:description" content="Tablas, picaña, langosta, pizzas cubanas y shows en vivo. Dos sedes en Tampa.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="imgs/tabla1.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"El Farandulero","servesCuisine":["Cubana","Latina"],"priceRange":"$$",
+"location":[{"@type":"Place","name":"Farandulero Restaurant Bar & Grill","address":{"@type":"PostalAddress","streetAddress":"4327 Gunn Hwy","addressLocality":"Tampa","addressRegion":"FL","postalCode":"33618","addressCountry":"US"},"telephone":"+1-813-399-0371"},
+{"@type":"Place","name":"El Farandulero Pizzería Cubana","address":{"@type":"PostalAddress","streetAddress":"9743 W Hillsborough Ave","addressLocality":"Tampa","addressRegion":"FL","postalCode":"33615","addressCountry":"US"},"telephone":"+1-813-970-5167"}]}
+</script>
+<style>
+:root{
+  --negro:#0b0b0d; --negro2:#16161a; --dorado:#e8c14c; --dorado2:#c9a227;
+  --crema:#f6efe0; --rojo:#ed2513; --naranja:#f97316; --verde:#14532d;
+  --texto:#f3ead3; --suave:#b9b09a;
+  --espacio-seccion:56px; --espacio-bloque:24px; --espacio-tarjeta:16px; --espacio-control:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--negro);color:var(--texto);line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit}
+.script{font-family:"Great Vibes",cursive;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:rgba(11,11,13,.96);border-bottom:1px solid #2b2b30}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 20px;max-width:1080px;margin:0 auto}
+header img.logo{height:52px;width:auto}
+.lang{display:flex;gap:8px}
+.lang button{background:transparent;border:1px solid var(--dorado2);color:var(--dorado);border-radius:999px;padding:6px 14px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.lang button.on{background:var(--dorado);color:#141310}
+.hero{padding:64px 0 var(--espacio-seccion);background:radial-gradient(900px 420px at 85% -10%,rgba(232,193,76,.16),transparent 60%),var(--negro)}
+.hero-grid{display:flex;flex-direction:column;gap:32px}
+.hero h1{font-size:44px;line-height:1.15;color:#fff}
+.hero h1 .script{display:block;font-size:56px;color:var(--dorado);line-height:1.1}
+.hero p{color:var(--suave);font-size:18px;max-width:34em;margin-top:14px}
+.hero-foto{border-radius:16px;overflow:hidden;border:1px solid #33332f}
+.hero-foto img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.notas{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.nota-chip{border:1px solid #3a3a35;border-radius:999px;padding:7px 14px;font-size:14px;background:var(--negro2)}
+.nota-chip b{color:var(--dorado)}
+.cta{display:inline-block;margin-top:26px;background:var(--rojo);color:#fff;text-decoration:none;font-weight:800;padding:15px 30px;border-radius:999px;font-size:17px}
+.cta:hover{background:#c21c0e}
+.cta.sec{background:transparent;border:2px solid var(--dorado);color:var(--dorado);margin-left:10px}
+section{padding:var(--espacio-seccion) 0}
+h2{font-size:30px;color:#fff;line-height:1.2}
+h2 .script{color:var(--dorado);font-size:40px;display:block}
+.sub{color:var(--suave);margin-top:8px;max-width:44em}
+.sedes{background:var(--crema);color:#211d13}
+.sedes h2{color:#171410}
+.sedes .sub{color:#5d5540}
+.cards{display:flex;flex-direction:column;gap:20px;margin-top:28px}
+.card{background:#fffdf7;border:1px solid #e3d9bd;border-radius:16px;padding:24px}
+.card h3{font-size:21px;color:#171410}
+.card .tag{display:inline-block;background:var(--negro);color:var(--dorado);font-size:12px;font-weight:800;letter-spacing:1.5px;border-radius:999px;padding:5px 12px;text-transform:uppercase;margin-bottom:12px}
+.card p{color:#4c4636;margin-top:6px}
+.card .tel{font-weight:800;color:#171410;text-decoration:none;font-size:19px}
+.card .links{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:11px 22px;font-size:15px}
+.btn.rojo{background:var(--rojo);color:#fff}
+.btn.borde{border:2px solid #171410;color:#171410}
+.platos-grid{display:flex;flex-direction:column;gap:20px;margin-top:28px}
+.plato{background:var(--negro2);border:1px solid #2e2e2a;border-radius:16px;overflow:hidden}
+.plato img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.plato .in{padding:var(--espacio-tarjeta)}
+.plato h3{color:#fff;font-size:18px}
+.plato p{color:var(--suave);font-size:14px;margin-top:4px}
+.plato .fila{display:flex;align-items:center;justify-content:space-between;margin-top:12px;gap:12px}
+.precio{font-size:22px;font-weight:800;color:var(--dorado)}
+.pedir{background:var(--naranja);color:#141310;text-decoration:none;font-weight:800;border-radius:999px;padding:9px 18px;font-size:14px}
+.shows{background:var(--verde);color:#eafff1}
+.shows h2{color:#fff}
+.shows h2 .script{color:var(--dorado)}
+.shows p{color:#cdeeda;max-width:44em;margin-top:8px}
+.resenas{background:var(--negro2)}
+.rev-cards{display:flex;flex-direction:column;gap:20px;margin-top:28px}
+.rev{background:var(--negro);border:1px solid #33332f;border-radius:16px;padding:24px}
+.rev .big{font-size:38px;font-weight:800;color:var(--dorado)}
+.rev p{color:var(--suave);margin-top:6px}
+footer{border-top:1px solid #2b2b30;padding:40px 0 48px;text-align:center}
+footer img{height:64px;width:auto;margin:0 auto 14px}
+footer p{color:var(--suave);font-size:14px}
+@media (min-width:760px){
+  .hero-grid{flex-direction:row;align-items:center}
+  .hero-grid>div{flex:1.1}.hero-grid .hero-foto{flex:.9}
+  .cards{flex-direction:row}.card{flex:1}
+  .platos-grid{flex-direction:row;flex-wrap:wrap}
+  .plato{flex:1 1 30%}
+  .rev-cards{flex-direction:row}.rev{flex:1}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-in">
+    <img class="logo" src="imgs/logo.svg" alt="El Farandulero Restaurant">
+    <div class="lang">
+      <button id="b-es" class="on" onclick="setLang('es')">ES</button>
+      <button id="b-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1><span class="script">Un Pedacito de Cuba en Tampa</span>
+      <span data-es="Tablas, cortes y shows en vivo" data-en="Platters, prime cuts and live shows">Tablas, cortes y shows en vivo</span></h1>
+      <p data-es="Esto sabe a Cuba: picaña y churrasco al estilo brasileño, mariscos, pizzas cubanas y las Noches de Humor que ya son tradición. Dos sedes, una sola casa." data-en="This tastes like Cuba: Brazilian-style picanha and churrasco, seafood, Cuban pizzas and the Comedy Nights that are already a tradition. Two locations, one home.">Esto sabe a Cuba: picaña y churrasco al estilo brasileño, mariscos, pizzas cubanas y las Noches de Humor que ya son tradición. Dos sedes, una sola casa.</p>
+      <div class="notas">
+        <span class="nota-chip">★ <b>4.6</b> Gunn Hwy · 336 <span data-es="reseñas" data-en="reviews">reseñas</span></span>
+        <span class="nota-chip">★ <b>4.1</b> Hillsborough · 277 <span data-es="reseñas" data-en="reviews">reseñas</span></span>
+      </div>
+      <a class="cta" href="#platos" data-es="Ver los platos estrella" data-en="See signature dishes">Ver los platos estrella</a>
+      <a class="cta sec" href="#sedes" data-es="Las 2 sedes" data-en="Our 2 locations">Las 2 sedes</a>
+    </div>
+    <div class="hero-foto"><img src="imgs/tabla1.webp" alt="Tabla familiar de El Farandulero con churrasco, picaña y chorizo"></div>
+  </div>
+</div>
+
+<section class="sedes" id="sedes">
+  <div class="wrap">
+    <h2><span class="script">Donde tú estés</span><span data-es="Dos sedes, el mismo sazón" data-en="Two locations, the same flavor">Dos sedes, el mismo sazón</span></h2>
+    <p class="sub" data-es="Elige tu sede: en Gunn Hwy te espera el restaurante con bar y escenario; en Hillsborough, la pizzería cubana de siempre, con su patio y sus completas." data-en="Pick your location: on Gunn Hwy, the restaurant with bar and stage; on Hillsborough, the Cuban pizzeria as always, with its patio and its completas.">Elige tu sede: en Gunn Hwy te espera el restaurante con bar y escenario; en Hillsborough, la pizzería cubana de siempre, con su patio y sus completas.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag" data-es="Restaurante · Bar · Shows" data-en="Restaurant · Bar · Shows">Restaurante · Bar · Shows</span>
+        <h3>Farandulero — Gunn Hwy</h3>
+        <p>4327 Gunn Hwy, Tampa, FL 33618</p>
+        <p><span data-es="Dom 11:30 AM–10:30 PM · Lun–Vie 12:00–10:30 PM · Sáb 11:00 AM–11:00 PM" data-en="Sun 11:30 AM–10:30 PM · Mon–Fri 12:00–10:30 PM · Sat 11:00 AM–11:00 PM">Dom 11:30 AM–10:30 PM · Lun–Vie 12:00–10:30 PM · Sáb 11:00 AM–11:00 PM</span></p>
+        <p><a class="tel" href="tel:+18133990371">(813) 399-0371</a></p>
+        <div class="links">
+          <a class="btn rojo" href="tel:+18133990371" data-es="Reservar mesa" data-en="Book a table">Reservar mesa</a>
+          <a class="btn borde" href="https://www.google.com/maps/search/?api=1&amp;query=Farandulero+Restaurant+4327+Gunn+Hwy+Tampa+FL+33618" data-es="Cómo llegar" data-en="Directions">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="card">
+        <span class="tag" data-es="Pizzería Cubana" data-en="Cuban Pizzeria">Pizzería Cubana</span>
+        <h3>El Farandulero — Hillsborough</h3>
+        <p>9743 W Hillsborough Ave, Tampa, FL 33615</p>
+        <p><span data-es="Todos los días 11:30 AM–9:30 PM" data-en="Every day 11:30 AM–9:30 PM">Todos los días 11:30 AM–9:30 PM</span></p>
+        <p><a class="tel" href="tel:+18139705167">(813) 970-5167</a></p>
+        <div class="links">
+          <a class="btn rojo" href="tel:+18139705167" data-es="Ordenar por teléfono" data-en="Order by phone">Ordenar por teléfono</a>
+          <a class="btn borde" href="https://www.google.com/maps/search/?api=1&amp;query=El+Farandulero+Pizzeria+9743+W+Hillsborough+Ave+Tampa+FL+33615" data-es="Cómo llegar" data-en="Directions">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="platos">
+  <div class="wrap">
+    <h2><span class="script">Los que mandan</span><span data-es="Platos estrella de Gunn Hwy" data-en="Signature dishes at Gunn Hwy">Platos estrella de Gunn Hwy</span></h2>
+    <p class="sub" data-es="Precios del menú digital del restaurante. Cada plato se ordena en MesaReady, el sistema de pedidos de la casa." data-en="Prices from the restaurant's digital menu. Every dish is ordered through MesaReady, our in-house ordering system.">Precios del menú digital del restaurante. Cada plato se ordena en MesaReady, el sistema de pedidos de la casa.</p>
+    <div class="platos-grid">
+      <article class="plato"><img src="imgs/tabla1.webp" alt="Tabla 1 Familiar de El Farandulero" loading="lazy">
+        <div class="in"><h3 data-es="Tabla 1 Familiar (para 4)" data-en="Tabla 1 Family Platter (serves 4)">Tabla 1 Familiar (para 4)</h3>
+        <p data-es="Churrasco, picaña, chorizo, masa de cerdo frita, costillas, alitas y chicharrones." data-en="Churrasco, picanha, chorizo, fried pork chunks, ribs, wings and chicharrones.">Churrasco, picaña, chorizo, masa de cerdo frita, costillas, alitas y chicharrones.</p>
+        <div class="fila"><span class="precio">$209.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/tabla9.webp" alt="Tabla 9 de Mariscos de El Farandulero" loading="lazy">
+        <div class="in"><h3 data-es="Tabla 9 de Mariscos (para 4)" data-en="Tabla 9 Seafood Platter (serves 4)">Tabla 9 de Mariscos (para 4)</h3>
+        <p data-es="Dos colas de langosta, pulpo, pargo, camarones y calamar frito." data-en="Two lobster tails, octopus, snapper, shrimp and fried calamari.">Dos colas de langosta, pulpo, pargo, camarones y calamar frito.</p>
+        <div class="fila"><span class="precio">$199.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/tomahawk.webp" alt="Tomahawk de El Farandulero" loading="lazy">
+        <div class="in"><h3>Tomahawk</h3>
+        <p data-es="El corte de lujo de la casa, para compartir en la mesa." data-en="The house luxury cut, made for sharing at the table.">El corte de lujo de la casa, para compartir en la mesa.</p>
+        <div class="fila"><span class="precio">$75.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/marytierra.webp" alt="Mar y Tierra de picaña y langosta" loading="lazy">
+        <div class="in"><h3 data-es="Mar y Tierra — Picaña y Langosta" data-en="Surf & Turf — Picanha & Lobster">Mar y Tierra — Picaña y Langosta</h3>
+        <p data-es="Lo mejor de la parrilla y del mar en un solo plato." data-en="The best of the grill and the sea on one plate.">Lo mejor de la parrilla y del mar en un solo plato.</p>
+        <div class="fila"><span class="precio">$64.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/paella.webp" alt="Paella mixta de El Farandulero" loading="lazy">
+        <div class="in"><h3 data-es="Paella Mixta" data-en="Mixed Paella">Paella Mixta</h3>
+        <p data-es="Con langosta, mejillones, camarones y calamares." data-en="With lobster, mussels, shrimp and calamari.">Con langosta, mejillones, camarones y calamares.</p>
+        <div class="fila"><span class="precio">$35.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/churrasco.webp" alt="Churrasco de El Farandulero" loading="lazy">
+        <div class="in"><h3>Churrasco</h3>
+        <p data-es="Al estilo brasileño, con el sazón cubano de la casa." data-en="Brazilian style, with the house Cuban seasoning.">Al estilo brasileño, con el sazón cubano de la casa.</p>
+        <div class="fila"><span class="precio">$29.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/picana.webp" alt="Picaña de El Farandulero" loading="lazy">
+        <div class="in"><h3 data-es="Picaña" data-en="Picanha">Picaña</h3>
+        <p data-es="El corte insignia, jugoso y al punto." data-en="The signature cut, juicy and cooked just right.">El corte insignia, jugoso y al punto.</p>
+        <div class="fila"><span class="precio">$28.50</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/langosta.webp" alt="Langosta de El Farandulero" loading="lazy">
+        <div class="in"><h3 data-es="Langosta" data-en="Lobster">Langosta</h3>
+        <p data-es="La gigante de la casa, con su mojo de ajo." data-en="The house giant, with its garlic mojo.">La gigante de la casa, con su mojo de ajo.</p>
+        <div class="fila"><span class="precio">$38.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/ropavieja.webp" alt="Ropa vieja de El Farandulero" loading="lazy">
+        <div class="in"><h3 data-es="Ropa Vieja" data-en="Ropa Vieja (shredded beef)">Ropa Vieja</h3>
+        <p data-es="La clásica cubana, como en casa." data-en="The Cuban classic, just like home.">La clásica cubana, como en casa.</p>
+        <div class="fila"><span class="precio">$17.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2><span class="script">La Farándula</span><span data-es="Lo más pedido en Hillsborough" data-en="Most ordered at Hillsborough">Lo más pedido en Hillsborough</span></h2>
+    <p class="sub" data-es="La pizzería cubana: pizzas, completas y la hamburguesa con la bandera. Precios de su menú de pedidos." data-en="The Cuban pizzeria: pizzas, completas and the burger with the flag. Prices from its ordering menu.">La pizzería cubana: pizzas, completas y la hamburguesa con la bandera. Precios de su menú de pedidos.</p>
+    <div class="platos-grid">
+      <article class="plato"><img src="imgs/pizza-farandula.webp" alt="Pizza La Farándula en forma de corazón" loading="lazy">
+        <div class="in"><h3 data-es="Pizza La Farándula" data-en="La Farándula Pizza">Pizza La Farándula</h3>
+        <p data-es="La especial de la casa, con nombre propio." data-en="The house special, with its own name.">La especial de la casa, con nombre propio.</p>
+        <div class="fila"><span class="precio">$16.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/pizza-napolitana.webp" alt="Pizza napolitana cubana" loading="lazy">
+        <div class="in"><h3 data-es="Pizza Napolitana" data-en="Neapolitan Pizza">Pizza Napolitana</h3>
+        <p data-es="La cubana de siempre, borde grueso y queso de verdad." data-en="The classic Cuban one, thick crust and real cheese.">La cubana de siempre, borde grueso y queso de verdad.</p>
+        <div class="fila"><span class="precio">$9.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/pizza-pimientos.webp" alt="Pizza de pimientos" loading="lazy">
+        <div class="in"><h3 data-es="Pizza de Pimientos" data-en="Bell Peppers Pizza">Pizza de Pimientos</h3>
+        <p data-es="Con pimientos, cebolla y el toque de la casa." data-en="With peppers, onion and the house touch.">Con pimientos, cebolla y el toque de la casa.</p>
+        <div class="fila"><span class="precio">$10.99</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+      <article class="plato"><img src="imgs/hamburguesa-creativa.webp" alt="Hamburguesa Súper Creativa con bandera cubana" loading="lazy">
+        <div class="in"><h3 data-es="Hamburguesa Súper Creativa" data-en="Super Creative Burger">Hamburguesa Súper Creativa</h3>
+        <p data-es="Con su papitas y la bandera puesta." data-en="With its fries and the flag on top.">Con su papitas y la bandera puesta.</p>
+        <div class="fila"><span class="precio">$15.90</span><a class="pedir" href="https://mesaready.newageprosystem.com/" data-es="Ordenar" data-en="Order">Ordenar</a></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="shows">
+  <div class="wrap">
+    <h2><span class="script">Noches de Humor</span><span data-es="Cena con show, solo en Gunn Hwy" data-en="Dinner with a show, only at Gunn Hwy">Cena con show, solo en Gunn Hwy</span></h2>
+    <p data-es="Los viernes la casa se llena de risa: comediantes cubanos en vivo, buena comida y mejor ambiente. Reserva tu mesa llamando al (813) 399-0371 — las mesas de show vuelan." data-en="On Fridays the house fills with laughter: live Cuban comedians, great food and an even better vibe. Book your table at (813) 399-0371 — show tables go fast.">Los viernes la casa se llena de risa: comediantes cubanos en vivo, buena comida y mejor ambiente. Reserva tu mesa llamando al (813) 399-0371 — las mesas de show vuelan.</p>
+    <a class="cta" href="tel:+18133990371" data-es="Reservar para el show" data-en="Book for the show">Reservar para el show</a>
+  </div>
+</section>
+
+<section class="resenas">
+  <div class="wrap">
+    <h2><span class="script">Lo que dice Tampa</span><span data-es="Reseñas reales de Google" data-en="Real Google reviews">Reseñas reales de Google</span></h2>
+    <div class="rev-cards">
+      <div class="rev"><div class="big">4.6 ★</div><p data-es="Gunn Hwy — 336 reseñas en Google. La casa nueva ya es la favorita del barrio." data-en="Gunn Hwy — 336 Google reviews. The new house is already the neighborhood favorite.">Gunn Hwy — 336 reseñas en Google. La casa nueva ya es la favorita del barrio.</p></div>
+      <div class="rev"><div class="big">4.1 ★</div><p data-es="Hillsborough — 277 reseñas en Google. La pizzería de siempre, la de las completas y la tabla en el patio." data-en="Hillsborough — 277 Google reviews. The long-time pizzeria, home of the completas and the patio platter.">Hillsborough — 277 reseñas en Google. La pizzería de siempre, la de las completas y la tabla en el patio.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="imgs/logo.svg" alt="El Farandulero Restaurant">
+    <p data-es="4327 Gunn Hwy, Tampa, FL 33618 · (813) 399-0371 — 9743 W Hillsborough Ave, Tampa, FL 33615 · (813) 970-5167" data-en="4327 Gunn Hwy, Tampa, FL 33618 · (813) 399-0371 — 9743 W Hillsborough Ave, Tampa, FL 33615 · (813) 970-5167">4327 Gunn Hwy, Tampa, FL 33618 · (813) 399-0371 — 9743 W Hillsborough Ave, Tampa, FL 33615 · (813) 970-5167</p>
+    <p data-es="Un Pedacito de Cuba en Tampa — Sabor y Tradición" data-en="A Little Piece of Cuba in Tampa — Flavor and Tradition">Un Pedacito de Cuba en Tampa — Sabor y Tradición</p>
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.documentElement.lang=l;
+  document.querySelectorAll('[data-es]').forEach(function(e){
+    e.textContent = (l==='es') ? e.getAttribute('data-es') : e.getAttribute('data-en');
+  });
+  document.getElementById('b-es').classList.toggle('on', l==='es');
+  document.getElementById('b-en').classList.toggle('on', l==='en');
+  try{ localStorage.setItem('farandulero-lang', l); }catch(e){}
+}
+try{ var saved=localStorage.getItem('farandulero-lang'); if(saved==='en') setLang('en'); }catch(e){}
+</script>
+</body>
+</html>
