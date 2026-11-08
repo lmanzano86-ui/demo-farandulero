@@ -1,0 +1,13 @@
+# El Farandulero — Restaurante Cubano en Tampa
+
+> El Farandulero (Farandulero Restaurant Bar & Grill) es un restaurante cubano en Tampa, Florida: «Un Pedacito de Cuba en Tampa». Cortes al estilo brasileño (churrasco, picaña, tomahawk), tablas familiares, mariscos (langosta, paella mixta, mar y tierra) y platos cubanos como la ropa vieja.
+
+## Datos del negocio
+- Dirección: 4327 Gunn Hwy, Tampa, FL 33618
+- Teléfono: +1 (813) 399-0371
+- Cocina: cubana y latina
+
+## Enlaces
+- Página del restaurante: https://lmanzano86-ui.github.io/demo-farandulero/
+- Encargos y catering (MesaReady): https://mesaready.newageprosystem.com/catering-farandulero.html
+- Cómo llegar: https://www.google.com/maps/search/?api=1&query=Farandulero+Restaurant+4327+Gunn+Hwy+Tampa+FL+33618
